@@ -1,9 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/label_foreign_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/label_foreign_currency"
+        android:textColor="#ff22e9ff" />
 
+    <Spinner
+        android:id="@+id/spn_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/label_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/label_currency_amount"
+        android:textColor="@color/grey_med"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey_very_dark"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textSize="30sp">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/btn_calc_text"
+        android:textColor="@color/grey_light" />
+
+    <TextView
+        android:id="@+id/label_home_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Home Currency"
+        android:textColor="@color/turquoise" />
+
+    <Spinner
+        android:id="@+id/spn_hom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/label_calculated_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/label_calculated_result_text"
+        android:textColor="@color/grey_med"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/txt_converted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey_med_dark"
+        android:textSize="30sp"
+        android:typeface="normal" />
 </LinearLayout>
