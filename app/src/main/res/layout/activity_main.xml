@@ -12,7 +12,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/label_foreign_currency"
-        android:textColor="#ff22e9ff" />
+        android:textColor="@color/turquoise" />
 
     <Spinner
         android:id="@+id/spn_for"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Home Currency"
+        android:text="@string/label_home_currency"
         android:textColor="@color/turquoise" />
 
     <Spinner

@@ -5,4 +5,5 @@
     <string name="label_currency_amount">Enter foreign currency amount here:</string>
     <string name="btn_calc_text">Calculate</string>
     <string name="label_calculated_result_text">Calculated result in home currency:</string>
+    <string name="label_home_currency">Home Currency</string>
 </resources>
