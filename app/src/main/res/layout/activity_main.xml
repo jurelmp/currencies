@@ -7,12 +7,8 @@
 
     <TextView
         android:id="@+id/label_foreign_currency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:text="@string/label_foreign_currency"
-        android:textColor="@color/turquoise" />
+        style="@style/label.curr" />
 
     <Spinner
         android:id="@+id/spn_for"
@@ -23,13 +19,8 @@
 
     <TextView
         android:id="@+id/label_amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:text="@string/label_currency_amount"
-        android:textColor="@color/grey_med"
-        android:textSize="12sp" />
+        style="@style/label.desc" />
 
     <EditText
         android:id="@+id/edit_amount"
