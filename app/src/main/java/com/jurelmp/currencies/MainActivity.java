@@ -37,11 +37,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public static final String FOR = "FOR_CURRENCY";
     public static final String HOM = "HOM_CURRENCY";
+
     // used to fetch the 'rates' json object from openexchangrates.org
     public static final String RATES = "rates";
     public static final String URL_BASE = "https://openexchangerates.org/api/latest.json?app_id=";
+
     // used to format data from openexchangerates.org
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#,##0.00000");
+
     // defines members that correspond to Views in our layout
     private Button mCalcButton;
     private TextView mConvertedTextView;
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 mCurrencies
         );
 
-        // view: layout youe see when the spinner is open
+        // view: layout you see when the spinner is open
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // assign adapters to spinner

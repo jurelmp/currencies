@@ -79,5 +79,6 @@
         android:layout_marginRight="5dp"
         android:background="@color/grey_med_dark"
         android:textSize="30sp"
+        android:textColor="@color/white"
         android:typeface="normal" />
 </LinearLayout>
