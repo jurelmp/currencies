@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +20,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     // defines members that correspond to Views in our layout
     private Button mCalcButton;
@@ -59,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         // assign adapters to spinner
         mHomSpinner.setAdapter(arrayAdapter);
         mForSpinner.setAdapter(arrayAdapter);
+
+        mHomSpinner.setOnItemSelectedListener(this);
+        mForSpinner.setOnItemSelectedListener(this);
     }
 
     @Override
@@ -115,5 +120,24 @@ public class MainActivity extends AppCompatActivity {
         mHomSpinner.setSelection(nFor);
 
         mConvertedTextView.setText("");
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        switch (parent.getId()) {
+            case R.id.spn_for:
+                // TODO for spinner foreign currency value
+                break;
+            case R.id.spn_hom:
+                // TODO for spinner home currency value
+                break;
+            default:
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
