@@ -139,6 +139,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mHomSpinner.setSelection(nFor);
 
         mConvertedTextView.setText("");
+
+        PrefsMgr.setString(this, FOR, extractCodeFromCurrency((String) mForSpinner.getSelectedItem()));
+        PrefsMgr.setString(this, HOM, extractCodeFromCurrency((String) mHomSpinner.getSelectedItem()));
     }
 
     private int findPositionGivenCode(String code, String[] mCurrencies) {
