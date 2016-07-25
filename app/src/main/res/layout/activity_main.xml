@@ -43,7 +43,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/btn_calc_text"
-        android:textColor="@color/grey_light" />
+        android:textColor="@color/white"
+        android:background="@drawable/button_selector"/>
 
     <TextView
         android:id="@+id/label_home_currency"
