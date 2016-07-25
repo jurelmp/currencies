@@ -53,11 +53,17 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id) {
+            case R.id.mnu_invert:
+                // TODO define behavior here
+                break;
+            case R.id.mnu_codes:
+                // TODO define behavior here
+                break;
+            case R.id.mnu_exit:
+                finish();
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 }

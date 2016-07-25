@@ -7,4 +7,7 @@
     <string name="label_calculated_result_text">Calculated result in home currency:</string>
     <string name="label_home_currency">Home Currency</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="menu_item_codes">search active codes</string>
+    <string name="menu_item_invert">invert codes</string>
+    <string name="menu_item_exit">exit</string>
 </resources>
