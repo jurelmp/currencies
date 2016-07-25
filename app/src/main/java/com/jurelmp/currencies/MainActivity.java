@@ -6,6 +6,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -124,12 +125,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private int findPositionGivenCode(String code, String[] mCurrencies) {
         for (int i = 0; i < mCurrencies.length; i++) {
-            if ((mCurrencies[i]).substring(0, 3).equalsIgnoreCase(code)) {
+            if (extractCodeFromCurrency(mCurrencies[i]).equalsIgnoreCase(code)) {
                 return i;
             }
         }
         // default
         return 0;
+    }
+
+    @NonNull
+    private String extractCodeFromCurrency(String mCurrency) {
+        return (mCurrency).substring(0, 3);
     }
 
     @Override
