@@ -122,6 +122,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mConvertedTextView.setText("");
     }
 
+    private int findPositionGivenCode(String code, String[] mCurrencies) {
+        for (int i = 0; i < mCurrencies.length; i++) {
+            if ((mCurrencies[i]).substring(0, 3).equalsIgnoreCase(code)) {
+                return i;
+            }
+        }
+        // default
+        return 0;
+    }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
