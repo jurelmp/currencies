@@ -1,4 +1,4 @@
-package com.jurelmp.currencies;
+package com.jpatoc.currencies;
 
 import android.util.Log;
 
@@ -16,9 +16,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-/**
- * Created by Jurel on 7/22/2016.
- */
 public class JSONParser {
 
     static InputStream sInputStream = null;

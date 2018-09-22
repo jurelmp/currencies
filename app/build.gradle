@@ -5,8 +5,8 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.jurelmp.currencies"
-        minSdkVersion 10
+        applicationId "com.jpatoc.currencies"
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"

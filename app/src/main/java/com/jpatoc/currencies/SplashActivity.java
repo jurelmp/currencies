@@ -1,4 +1,4 @@
-package com.jurelmp.currencies;
+package com.jpatoc.currencies;
 
 import android.app.Activity;
 import android.content.Intent;

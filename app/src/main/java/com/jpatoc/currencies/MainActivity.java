@@ -1,4 +1,4 @@
-package com.jurelmp.currencies;
+package com.jpatoc.currencies;
 
 import android.app.ProgressDialog;
 import android.content.Context;

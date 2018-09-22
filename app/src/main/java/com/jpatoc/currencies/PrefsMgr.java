@@ -1,12 +1,9 @@
-package com.jurelmp.currencies;
+package com.jpatoc.currencies;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-/**
- * Created by Jurel on 7/25/2016.
- */
 public class PrefsMgr {
     private static SharedPreferences sSharedPreferences;
 

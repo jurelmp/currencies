@@ -1,4 +1,4 @@
-package com.jurelmp.currencies;
+package com.jpatoc.currencies;
 
 import org.junit.Test;
 
